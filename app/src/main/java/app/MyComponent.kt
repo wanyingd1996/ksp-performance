@@ -8,7 +8,7 @@ import javax.inject.Singleton
 interface MyComponent {
   fun getEntryPoint1(): EntryPoint1
 
- // fun getEntryPoint2(): EntryPoint2
+  fun getEntryPoint2(): EntryPoint2
 
-//  fun getEntryPoint3(): EntryPoint3
+  fun getEntryPoint3(): EntryPoint3
 }
