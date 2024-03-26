@@ -1,0 +1,22 @@
+buildscript {
+  ext {
+    dagger_version = "2.51"
+    kotlin_version = "1.9.20"
+    ksp_version = "$kotlin_version-1.0.14"
+  }
+  repositories {
+    mavenCentral()
+    mavenLocal()
+  }
+  dependencies {
+    classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version")
+    classpath("com.google.devtools.ksp:com.google.devtools.ksp.gradle.plugin:$ksp_version")
+  }
+}
+
+allprojects {
+  repositories {
+    mavenCentral()
+    mavenLocal()
+  }
+}
